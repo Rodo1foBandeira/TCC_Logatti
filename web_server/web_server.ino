@@ -85,11 +85,20 @@ void loop(){
 					client.println("</div>");
 					client.println("<div class='center-align'>");
 					client.println("<!-- Quarto lado cozinha -->");
-					client.println("<a href='?digital=0' class='btn-floating" + (digitalRead(4) == HIGH) ? " pulse blue-grey " : " " + "lighten-2' style='position: absolute;margin-left: 8px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");					
+         if (digitalRead(4) == HIGH){
+            client.println("<a href='?digital=0' class='btn-floating pulse lighten-2' style='position: absolute;margin-left: 8px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");
+         }else{
+            client.println("<a href='?digital=0' class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");
+         }				 
 					client.println("<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 9px;'><i class='material-icons'>power</i></a>");
 
 					client.println("<!-- Cozinha -->");
-					client.println("<a  href='?digital=2' class='btn-floating" + (digitalRead(5) == HIGH) ? " pulse blue-grey " : " " + "lighten-2' style='position: absolute;margin-left: 200px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");
+         if (digitalRead(5) == HIGH){
+            client.println("<a  href='?digital=2' class='btn-floating pulse lighten-2' style='position: absolute;margin-left: 200px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");
+         }else{
+            client.println("<a  href='?digital=2' class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 200px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>");
+         }
+					
 					client.println("<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 244px;margin-top: 9px;'><i class='material-icons'>power</i></a>");
 
 					client.println("<!-- Quarto meio -->");
