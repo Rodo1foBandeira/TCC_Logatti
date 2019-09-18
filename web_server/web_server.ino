@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "Teste";
-const char* password = "teste1234";
+const char* ssid = "Rep Tio Pepao 2";
+const char* password = "baltazar";
 
 WiFiServer server(80);
 
@@ -63,6 +63,8 @@ void loop(){
 					client.println("<!DOCTYPE html>");
 					client.println("<html>");
 					client.println("<head>");
+         client.println("<meta charset='UTF-8'>");
+         
 					client.println("<!--Import Google Icon Font-->");
 					client.println("<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>");
 					client.println("<!--Import materialize.css-->");
@@ -93,12 +95,12 @@ void loop(){
 					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 208px;'><i class='material-icons'>power</i></a>");
 
 					client.println("<!-- Quarto lado sala -->");
-					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 402px;'><i class='material-icons'>wb_sunny</i></a>");
-					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 402px;'><i class='material-icons'>power</i></a>");
+					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 480px;'><i class='material-icons'>wb_sunny</i></a>");
+					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 480px;'><i class='material-icons'>power</i></a>");
 
 					client.println("<!-- Sala -->");
-					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 200px;margin-top: 542px;'><i class='material-icons'>wb_sunny</i></a>");
-					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 244px;margin-top: 542px;'><i class='material-icons'>power</i></a>");
+					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 200px;margin-top: 480px;'><i class='material-icons'>wb_sunny</i></a>");
+					client.println("<a class='btn-floating pulse blue-grey lighten-2' style='position: absolute;margin-left: 244px;margin-top: 480px;'><i class='material-icons'>power</i></a>");
 					client.println("");
 					client.println("<img class='responsive-img' src='https://raw.githubusercontent.com/Rodo1foBandeira/TCC_Logatti/master/Layout/img/Planta.jpg'>");
 
