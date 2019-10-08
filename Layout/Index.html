@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<head>
+<meta charset='UTF-8'>
 
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--Import Google Icon Font-->
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+<!--Import materialize.css-->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
 
-    </head>
+<!--Let browser know website is optimized for mobile-->
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="card-panel col s12 blue-grey lighten-4">
-                    <h4 class="center-align">Sistema de pré-automatização residencial</h4>
-                </div>                
-                <div class="center-align">
-                    <!-- Quarto lado cozinha -->
-                    <a href="?digital=0" class="btn-floating pulse lighten-2" style="position: absolute;margin-left: 8px;margin-top: 9px;"><i class="material-icons">wb_sunny</i></a>
-                    <a class="btn-floating pulse lighten-2" style="position: absolute;margin-left: 52px;margin-top: 9px;"><i class="material-icons">power</i></a>
-                    
-                    <!-- Cozinha -->
-                    <a href="?digital=2" class="btn-floating pulse lighten-2" style="position: absolute;margin-left: 200px;margin-top: 9px;"><i class="material-icons">wb_sunny</i></a>
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 244px;margin-top: 9px;"><i class="material-icons">power</i></a>
+</head>
 
-                    <!-- Quarto meio -->
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 8px;margin-top: 208px;"><i class="material-icons">wb_sunny</i></a>
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 52px;margin-top: 208px;"><i class="material-icons">power</i></a>
+<body>
+<div class='container'>
+<div class='row'>
+<div class='card-panel col s12 blue-grey lighten-4'>
+<h4 class='center-align'>Sistema de pré-automatização residencial</h4>
+</div>
+<div class='center-align'>
 
-                    <!-- Quarto lado sala -->
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 8px;margin-top: 480px;"><i class="material-icons">wb_sunny</i></a>
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 52px;margin-top: 480px;"><i class="material-icons">power</i></a>
-                    
-                    <!-- Sala -->
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 200px;margin-top: 480px;"><i class="material-icons">wb_sunny</i></a>
-                    <a class="btn-floating blue-grey lighten-2" style="position: absolute;margin-left: 244px;margin-top: 480px;"><i class="material-icons">power</i></a>
+<!-- Quarto lado cozinha -->
+<a id='btn0' onclick='comutar(0)' class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 9px;'><i class='material-icons'>power</i></a>
 
-                    <img class="responsive-img" src="https://raw.githubusercontent.com/Rodo1foBandeira/TCC_Logatti/master/Layout/img/Planta.jpg">
+<!-- Cozinha -->
+<a id='btn2' onclick='comutar(2)' class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 200px;margin-top: 9px;'><i class='material-icons'>wb_sunny</i></a>
 
-                </div>
-            </div>        
-        </div>
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 244px;margin-top: 9px;'><i class='material-icons'>power</i></a>
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </body>
+<!-- Quarto meio -->
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 208px;'><i class='material-icons'>wb_sunny</i></a>
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 208px;'><i class='material-icons'>power</i></a>
+
+<!-- Quarto lado sala -->
+<a class='btn-floating  blue-grey lighten-2' style='position: absolute;margin-left: 8px;margin-top: 480px;'><i class='material-icons'>wb_sunny</i></a>
+<a class='btn-floating  blue-grey lighten-2' style='position: absolute;margin-left: 52px;margin-top: 480px;'><i class='material-icons'>power</i></a>
+
+<!-- Sala -->
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 200px;margin-top: 480px;'><i class='material-icons'>wb_sunny</i></a>
+<a class='btn-floating blue-grey lighten-2' style='position: absolute;margin-left: 244px;margin-top: 480px;'><i class='material-icons'>power</i></a>
+
+<img class='responsive-img' src='https://raw.githubusercontent.com/Rodo1foBandeira/TCC_Logatti/master/Layout/img/Planta.jpg'>
+
+</div>
+</div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
+
+
+
+<script>
+    var tst;
+    function comutar(pin){
+        $.get('http://localhost/simu/api.php/?digital='+pin, function(data) {
+            
+            data.forEach(x => {
+                $('#btn'+x.pin).removeClass('blue-grey').removeClass('pulse')
+                if (x.status === 1)
+                    $('#btn'+x.pin).addClass('pulse')
+                else
+                    $('#btn'+x.pin).addClass('blue-grey')
+            })
+        })
+        .fail(function() {
+            comutar(pin);
+        });
+    }
+
+    function atualizar(){
+        $.get('http://localhost/simu/api.php', function(data) {
+            
+            data.forEach(x => {
+                $('#btn'+x.pin).removeClass('blue-grey').removeClass('pulse')
+                if (x.status === 1)
+                    $('#btn'+x.pin).addClass('pulse')
+                else
+                    $('#btn'+x.pin).addClass('blue-grey')
+            })
+        })
+    }
+    setInterval(() => {
+        atualizar();
+    }, 1000);
+</script>
+
+</body>
 </html>
